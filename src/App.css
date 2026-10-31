@@ -1,0 +1,210 @@
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6f8;
+  color: #222;
+}
+
+/* Header */
+header {
+  background: #1e3a8a;
+  color: white;
+  padding: 20px 50px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+/* Navigation */
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  margin-top: 18px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.welcome-user {
+  color: white;
+  font-weight: bold;
+}
+
+/* Main content */
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: 35px auto;
+}
+
+.container > h2 {
+  text-align: center;
+  color: #1e3a8a;
+  margin-bottom: 25px;
+}
+
+/* Welcome section */
+.welcome {
+  background: white;
+  padding: 30px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.welcome h2 {
+  color: #1e3a8a;
+  margin-bottom: 10px;
+}
+
+.welcome p {
+  color: #555;
+}
+
+/* Event cards */
+.events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
+}
+
+.event-card {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-card h3 {
+  color: #1e3a8a;
+  margin-top: 0;
+  margin-bottom: 18px;
+}
+
+.event-card p {
+  margin: 10px 0;
+}
+
+.event-card button {
+  margin-top: 10px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.event-card button:hover {
+  background: #162d6b;
+}
+
+.event-card button:disabled {
+  background: #999;
+  cursor: not-allowed;
+}
+
+/* Forms */
+form {
+  background: white;
+  padding: 30px;
+  max-width: 420px;
+  margin: 40px auto;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+form h2 {
+  color: #1e3a8a;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+form label {
+  display: block;
+  font-weight: bold;
+  margin-top: 12px;
+  margin-bottom: 5px;
+  color: #333;
+}
+
+form input {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #1e3a8a;
+}
+
+form button {
+  width: 100%;
+  margin-top: 15px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 11px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+form button:hover {
+  background: #162d6b;
+}
+
+/* Registration cards */
+.registration-card {
+  background: white;
+  padding: 22px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+.registration-card h3 {
+  color: #1e3a8a;
+  margin-top: 0;
+}
+
+.registration-card p {
+  margin: 8px 0;
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  header {
+    padding: 20px;
+  }
+
+  nav {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .container {
+    width: 92%;
+  }
+}
