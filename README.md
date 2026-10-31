@@ -1,5 +1,6 @@
 
-# TechFest 2026
+# TechFest 2026 - Main Branch Version
+
 
 A MERN-based portal for managing technical events and registrations.
 
