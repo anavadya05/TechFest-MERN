@@ -1,12 +1,12 @@
 import { useEffect, useState } from "react";
-
+const API_URL = import.meta.env.VITE_API_URL;
 function MyRegistrations() {
   const [registrations, setRegistrations] = useState([]);
 
   useEffect(() => {
     const token = localStorage.getItem("token");
 
-    fetch("http://localhost:5000/api/registrations/my", {
+    fetch(`${API_URL}/api/registrations/my`, {
       headers: {
         Authorization: `Bearer ${token}`
       }

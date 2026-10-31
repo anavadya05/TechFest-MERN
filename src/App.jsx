@@ -6,11 +6,13 @@ import Login from "./pages/login";
 import Register from "./pages/register";
 import MyRegistrations from "./pages/myregistrations";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
 function Events() {
   const [events, setEvents] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/events")
+    fetch(`${API_URL}/api/events`)
       .then((res) => res.json())
       .then((data) => setEvents(data));
   }, []);
@@ -23,7 +25,7 @@ function Events() {
       return;
     }
 
-    const res = await fetch("http://localhost:5000/api/registrations", {
+    const res = await fetch(`${API_URL}/api/registrations`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
